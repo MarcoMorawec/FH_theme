@@ -31,7 +31,6 @@
 
 	<meta name="description" content="<?php echo !empty($meta_description)?$meta_description:"" ?>" />
 	<meta name="keywords" content="<?php echo !empty($meta_keywords)?$meta_keywords:"" ?>" />
-	<link rel="shortcut icon" href="<?php echo !empty($favicon)?$favicon:bloginfo('stylesheet_directory')."/images/favicon.ico" ?>" type="image/x-icon" />
 
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
