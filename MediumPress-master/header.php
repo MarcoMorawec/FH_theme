@@ -121,14 +121,14 @@
 							        <div class="errors" style="display:none"></div>
 							        <h4 style="color:white;">Get on the list!</h4>
 							        <h5 style="color:white;"></h5>
-									<input class="string email required form-control" id="email" name="opt_in[email]" type="email" placeholder="CodeHero@gmail.com">
+									<input class="string email required form-control" id="email" name="opt_in[email]" type="email" placeholder="CodeHero@gmail.com" style="border: 5px solid white;-webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1);-moz-box-shadow: inset 0 0 8px rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1);box-shadow: inset 0 0 8px rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1);padding: 15px;background: rgba(255,255,255,0.5);margin: 0 0 0px 0;width: 200px;font-size: 18px">
 
 									<div class="input hidden opt_in_came_from"><input class="hidden form-control" id="came_from" name="opt_in[came_from]" type="hidden" value="blog-root"></div>
 
 							        <br/>
 							        <br/>
 
-									<input class="btn btn-primary" name="commit" type="submit" value="Get Access">
+									<input class="btn btn-primary" name="commit" type="submit" value="Subscribe" style="background-color:#57ad68;color:#fff;">
 								</form>
 							</div>
 
