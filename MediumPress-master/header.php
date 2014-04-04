@@ -130,8 +130,8 @@
 							</div>
 
 
-							<div id="thanksForOptingIn" style="display:none;">
-								Thanks for opting in
+							<div id="thanksForOptingIn" style="display:none; color: white;">
+								Awesome!  You're on the list!
 							</div>
 
 
