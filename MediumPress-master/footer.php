@@ -22,6 +22,31 @@
 	<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/jquery.mousewheel.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/jquery.jscrollpane.min.js"></script>
 
+
+
+	<script>
+	<!-- Kens Awesome Sexy Opt-In Awesomeness hashtag sex machine -->
+	$(function() {
+	    $('#opt-in-form').submit(function() {
+	      var email = $('#email').val();
+	      var came_from = $('#came_from').val();
+	      $.post('http://www.thefirehoseproject.com/opt-ins', { opt_in: { email: email, came_from: came_from } }).success(function() {
+	        $('#mainForm').hide('slow');
+	        $('#thanksForOptingIn').show('slow');
+	        }).fail(function(response, textStatus, jqXHR) {
+	          var data = $.parseJSON(response.responseText);
+	          if(data && data.errors && data.errors.email) {
+	          var errorIcon = "<i class='icon-warning-sign'></i>&nbsp;&nbsp;The email "
+	          $('#opt-in-form .errors').html(errorIcon + data.errors.email.join(', ')).show();
+	          $('#opt-in-form .errors').show('slow');
+	          }
+	          });
+
+	      return false;
+	      });
+	    });
+	</script>
+
 	<?php if(is_single()): ?>
 	<script type="text/javascript">
 		$(function() {

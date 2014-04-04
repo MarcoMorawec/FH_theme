@@ -116,14 +116,32 @@
 
 							<!-- Adding the email form --!>
 
-							<form>
-								<h4 style="color:white;">Get on the list!</h4>
-								<h5 style="color:white;"></h5>
-								<input type="text" name="email" placeholder="CodeHero@gmail.com">
-								<br/>
-								<br/>
-								<a class="btn" style="background-color:#57ad68;color:#fff;"><i class="icon-plus"></i>Sign-Up</a>
-							</form>
+							<div id="mainForm">
+								<form accept-charset="UTF-8" action="http://www.thefirehoseproject.com/opt-ins" class="simple_form new_opt_in" id="opt-in-form" method="post" novalidate="novalidate">
+							        <div class="errors" style="display:none"></div>
+							        <h4 style="color:white;">Get on the list!</h4>
+							        <h5 style="color:white;"></h5>
+									<input class="string email required form-control" id="email" name="opt_in[email]" type="email" placeholder="CodeHero@gmail.com">
+
+									<div class="input hidden opt_in_came_from"><input class="hidden form-control" id="came_from" name="opt_in[came_from]" type="hidden" value="blog-root"></div>
+
+							        <br/>
+							        <br/>
+
+									<input class="btn btn-primary" name="commit" type="submit" value="Get Access">
+								</form>
+							</div>
+
+
+							<div id="thanksForOptingIn" style="display:none;">
+								Thanks for opting in
+							</div>
+
+
+
+
+
+
 
 
 						<?php endif; ?>
