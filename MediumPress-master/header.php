@@ -112,9 +112,6 @@
 					<p class="cover-description"><?php bloginfo('description') ?></p>
 					<div class="cover-bottom">
 						<?php if(is_home() || is_tag() || is_category() || is_search()): ?>
-							<!-- <a class="btn" href="<?php bloginfo('rss2_url') ?>" style="background-color:#57ad68;color:#fff;"><i class="icon-feed"></i> Subscribe via RSS</a> --!>
-
-							<!-- Adding the email form --!>
 
 							<div id="mainForm">
 								<form accept-charset="UTF-8" action="http://www.thefirehoseproject.com/opt-ins" class="simple_form new_opt_in" id="opt-in-form" method="post" novalidate="novalidate">
